@@ -15,7 +15,6 @@ from pathlib import Path
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/5.0/howto/deployment/checklist/
 
@@ -26,7 +25,6 @@ SECRET_KEY = 'django-insecure-v(w*d7t$zy5wl93a%pe&2t3z1tw8z$v*jh@s%6%4an#m&z@2$^
 DEBUG = True
 
 ALLOWED_HOSTS = []
-
 
 # Application definition
 
@@ -71,18 +69,17 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'Ai_Blog.wsgi.application'
 
-
 # Database
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
 
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'Ai_blogDB',     # Name of your database
-        'USER': 'postgres',          # PostgreSQL username
-        'PASSWORD': 'obiwan',        # PostgreSQL password
-        'HOST': 'localhost',         # Assuming your database is running locally
-        'PORT': '5432',              # Default PostgreSQL port
+        'NAME': 'Ai_blogDB',  # Name of your database
+        'USER': 'postgres',  # PostgreSQL username
+        'PASSWORD': 'obiwan',  # PostgreSQL password
+        'HOST': 'localhost',  # Assuming your database is running locally
+        'PORT': '5432',  # Default PostgreSQL port
     }
 }
 
@@ -104,7 +101,6 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
-
 # Internationalization
 # https://docs.djangoproject.com/en/5.0/topics/i18n/
 
@@ -116,7 +112,6 @@ USE_I18N = True
 
 USE_TZ = True
 
-
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.0/howto/static-files/
 
@@ -126,3 +121,5 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+LOGIN_URL = 'login'
